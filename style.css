@@ -1,0 +1,65 @@
+body{
+    background:url(./imagenes/fondodepantalla.png)no-repeat center center;
+    background-size: cover;
+    height: 950px;
+    overflow: hidden;
+}
+
+.intro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.btn{
+    margin: 80px;
+    background: black !important;
+    border-radius: 10px;
+
+}
+
+
+.btn a{
+    text-decoration: none;
+    color: #4ec81a;
+    margin: 20px;
+    padding: 20px;
+}
+.btn:hover{
+    background:#4ec81a  !important;
+}
+.btn a:hover{
+    color: black;
+}
+.image{
+    border-radius: 50px;
+    height: 700px;
+    
+}
+
+
+@media only screen and (max-width:600px){
+    .image{
+        height: 300px;
+    }
+}
+
+
+@media only screen and (min-width:600px){
+    .image{
+        height: 300px;
+    }
+}
+
+@media only screen and (min-width:768px){
+    .image{
+        height: 400px;
+    }
+}
+
+@media only screen and (min-width:992px){
+    .image{
+        height: 700px;
+    }
+}
