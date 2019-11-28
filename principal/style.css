@@ -1,0 +1,115 @@
+html body{
+    background: black;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*NAVBAR*/
+.navbar{
+    background:#000000 !important;
+    border-bottom: 1px solid #4ec81a;
+}
+.nav-item{
+    margin-left: 15px;
+    padding-left: 15px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid #4ec81a;
+}
+
+
+.collapse .navbar-nav .nav-item .nav-link{
+    color: #4ec81a;
+}
+.dropdown-menu .dropdown-item{
+    color: #4ec81a;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background: #000;
+}
+
+.search{
+    border: 1px solid #4ec81a;
+    color: #4ec81a;
+}
+.search:hover{
+    background: #4ec81a !important;
+    color: black;
+}
+
+
+.navbar-toggler-icon{
+    color: #4ec81a !important ;
+}
+
+.form-control{
+    border: 1px solid #4ec81a;
+}
+
+.recientes{
+    color: #4ec81a;
+}
+
+.container{
+    border-bottom: 1px solid #4ec81a;
+}
+
+.btn{
+    background: black !important;
+    color:#4ec81a;
+    border: 1px solid #4ec81a;
+}
+
+.btn:hover{
+    background: #4ec81a !important;
+    color: #000;
+    border: 1px solid black !important;
+}
+
+/*SLIDER PRINCIPAL*/
+.carousel{
+    border-bottom: 1px solid #4ec81a;
+}
+
+.carousel-caption{
+    text-align: left;
+}
+h5{
+    font-size: 60px;
+}
+
+/*SECCIONES PELICULAS*/
+.destacadas{
+    color: #4ec81a;
+}
+
+
+.sections{
+    text-decoration: none !important;
+    color: #4ec81a;
+}
+.all{
+    text-decoration: none !important;
+    color: #4ec81a;
+}
+.all:hover{
+    color: #4ec81a;
+}
+
+.sections:hover{
+    border-bottom: 5px solid #4ec81a;
+    color: #4ec81a;
+}
+
+/*MODAL*/
+
+.modal-footer{
+    background:black !important;
+}
+
+.boton:hover{
+    background: black !important;
+}

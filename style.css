@@ -35,7 +35,9 @@ body{
 .image{
     border-radius: 50px;
     height: 700px;
-    
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(78,200,26,0.42);
+-moz-box-shadow: 10px 10px 5px 0px rgba(78,200,26,0.42);
+box-shadow: 10px 10px 5px 0px rgba(78,200,26,0.42);
 }
 
 
