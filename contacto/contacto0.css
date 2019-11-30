@@ -75,7 +75,6 @@ input, textarea{
     border-bottom: 1px solid #333;
     outline: none;
     padding: 15px;
-    align-content: center;
 }
 
 #btnenviar{
