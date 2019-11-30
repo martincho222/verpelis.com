@@ -1,0 +1,142 @@
+body{
+    border-top: 4px solid  #4ec81a;
+    margin: 0;
+    background: url(./imagenesContacto/popc.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.navbar{
+    background:#000000 !important;
+    border-bottom: 1px solid #4ec81a;
+}
+.nav-item{
+    margin-left: 15px;
+    padding-left: 15px;
+}
+.nav-link:hover{
+    border-bottom: 1px solid #4ec81a;
+}
+
+
+.collapse .navbar-nav .nav-item .nav-link{
+    color: #4ec81a;
+}
+.dropdown-menu .dropdown-item{
+    color: #4ec81a;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    background: #000;
+}
+
+.search{
+    border: 1px solid #4ec81a;
+    color: #4ec81a;
+}
+.search:hover{
+    background: #4ec81a !important;
+    color: black;
+}
+
+
+.navbar-toggler-icon{
+    color: #4ec81a !important ;
+}
+
+.container{
+    margin: auto;
+    background: #ffff;
+    max-width: 1000px;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 4px grey;
+    border-radius: 6px;
+    box-sizing: border-box;
+}
+
+h2{
+    color: #212121;
+    text-align: center;
+    margin: 0px;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+hr{
+    width: 85%;
+}
+
+input, textarea{
+    font-size: 16px;
+    width: 90%;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    padding: 15px;
+    align-content: center;
+}
+
+#btnenviar{
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    color: #fff;
+    background-color: #0277bd;
+    border-radius: 25px;
+}
+
+#btnenviar:hover{
+    background: #58a5f0;
+    color: whitesmoke;
+}
+
+input:focus, textarea:focus, button:focus{
+    outline: none;
+}
+
+h3{
+    text-align: center;
+}
+
+.text-Right{
+    padding: 38px 0 38px 38px;
+    justify-content: center;
+    text-align: center;
+}
+
+.left-area{
+    justify-content: center;
+    align-content: center;    
+}
+
+.text-Right ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: #333;
+}
+
+.text-Right ul li i{
+    color: #333;
+    padding-right: 10px;
+}
+
+.text-Right ul li{
+    line-height: 2.5;
+}
+
+.card-header{
+    background: white;
+    border: white;
+}
+
+#btn{
+    color: black;
+}
+
+.modal-title{
+    text-align: center;
+}
