@@ -285,19 +285,9 @@ h3 a:hover{
   }
 }
 
-<<<<<<< HEAD:peliculas/pelicula.css
-.boton:hover{
-    background: black !important;
-}
-
-div.card{
-    background: #fff;
-}
-=======
 @media only screen and (min-width: 992px) {
   .destacadas .recientes .sections .all {
     margin: 8px;
     padding: 10px;
   }
 }
->>>>>>> paginaPrincipal:principal/style.css
