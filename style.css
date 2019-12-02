@@ -23,7 +23,7 @@ video{
 }
 
 .btn{
-    margin: 80px;
+    margin: -10px;
     background: black !important;
     border-radius: 10px;
     border: 1px solid #4ec81a;
