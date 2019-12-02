@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Team black Wolves">
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css" integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/css/bootstrap.min.css"
+      integrity="sha384-SI27wrMjH3ZZ89r4o+fGIJtnzkAnFs3E4qz9DIYioCQ5l9Rd/7UAa8DHcaL8jkWt"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./style.css" />
     <script
       src="https://kit.fontawesome.com/2ed0c63b08.js"
@@ -21,13 +26,14 @@
       href="./src/owl-carousel/OwlCarousel2-2.3.4/dist/assets/owl.theme.default.min.css"
     />
     <!--FIN OWL CAROUSEL PACK-->
-
-    <title>VERPELIS.COM</title>
+    <link href="https://fonts.googleapis.com/css?family=Solway&display=swap" rel="stylesheet"> 
+    <title>VERPELIS</title>
   </head>
+
   <body>
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand" href="#"
+      <a class="navbar-brand" href="../index.html"
         ><img class="image" src="../imagenes/logoverpelis.png" alt=""
       /></a>
       <button
@@ -61,10 +67,29 @@
             >
             <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Lista Completa</a>
-              <a class="dropdown-item" href="#recientes">Estrenos</a>
+              <a class="dropdown-item" href="#estrenos">Estrenos</a>
             </div>
+
           </li>
-          <li class="nav-item"><a class="nav-link" href="">Series</a></li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Series</a
+            >
+            <div class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Lista Completa</a>
+              <a class="dropdown-item" href="#series-recientes">Recientes</a>
+            </div>
+
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" href=""
               ><i class="fas fa-user-alt fas-5x fa-lg"></i
@@ -89,90 +114,99 @@
     </nav>
     <!--FIN NAVBAR-->
 
-    <!--SILDER-->
-    <div class="container">
-      <h2 class="recientes m-5 p-1">Agregadas Recientemente</h2>
-    </div>
+    <!--SILDER PRINCIPAL-->
 
-    <div
-      id="carouselExampleFade"
-      class="carousel slide carousel-fade"
-      data-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active bg1">
-          <img
-            src="../imagenes/slider principal/joker2.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>The Joker</h5>
-            <button class="btn btn-dark">Ver pelicula</button>
+    <section>
+      <div
+        id="carouselExampleFade"
+        class="carousel slide carousel-fade carousel-tam"
+        data-ride="carousel"
+      >
+        <ol class="carousel-indicators">
+          <li
+            data-target="#carouselExampleFade"
+            data-slide-to="0"
+            class="active"
+          ></li>
+          <li data-target="#carouselExampleFade" data-slide-to="1"></li>
+          <li data-target="#carouselExampleFade" data-slide-to="2"></li>
+          <li data-target="#carouselExampleFade" data-slide-to="3"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active bg1">
+            <img
+              src="../imagenes/slider principal/joker2.png"
+              class="d-block w-100 image-slider"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>The Joker</h5>
+              <button class="btn btn-dark"><a href="">Ver pelicula</a></button>
+            </div>
+          </div>
+          <div class="carousel-item bg2">
+            <img
+              src="../imagenes/slider principal/1toystory4.png"
+              class="d-block w-100 image-slider"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Toy Story 4</h5>
+              <button class="btn btn-dark"><a href="">Ver pelicula</a></button>
+            </div>
+          </div>
+          <div class="carousel-item bg3">
+            <img
+              src="../imagenes/slider principal/it2.png"
+              class="d-block w-100 image-slider"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>It Chapter 2</h5>
+              <button class="btn btn-dark"><a href="">Ver pelicula</a></button>
+            </div>
+          </div>
+          <div class="carousel-item bg4">
+            <img
+              src="../imagenes/slider principal/proyectogeminis22.png"
+              class="d-block w-100 image-slider"
+              alt="..."
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Proyecto Geminis</h5>
+              <button class="btn btn-dark"><a href="">Ver pelicula</a></button>
+            </div>
           </div>
         </div>
-        <div class="carousel-item bg2">
-          <img
-            src="../imagenes/slider principal/1toystory4.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Toy Story 4</h5>
-            <button class="btn btn-dark">Ver pelicula</button>
-          </div>
-        </div>
-        <div class="carousel-item bg3">
-          <img
-            src="../imagenes/slider principal/it2.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>It Chapter 2</h5>
-            <button class="btn btn-dark">Ver pelicula</button>
-          </div>
-        </div>
-        <div class="carousel-item bg4">
-          <img
-            src="../imagenes/slider principal/proyectogeminis22.png"
-            class="d-block w-100"
-            alt="..."
-          />
-          <div class="carousel-caption d-none d-md-block">
-            <h5>Proyecto Geminis</h5>
-            <button class="btn btn-dark">Ver pelicula</button>
-          </div>
-        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselExampleFade"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-      <a
-        class="carousel-control-prev"
-        href="#carouselExampleFade"
-        role="button"
-        data-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </a>
-      <a
-        class="carousel-control-next"
-        href="#carouselExampleFade"
-        role="button"
-        data-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </a>
-    </div>
+    </section>
 
-    <!--FIN SILDER-->
+    <!--FIN SILDER PRINCIPAL-->
 
     <!--SECCIONES PELICULAS-->
-    <div class="container-fluid d-flex">
+    <div class="container d-flex">
       <div class="row">
         <div class="col-12">
           <h2 class=" destacadas m-5 p-1">Peliculas</h2>
-          <a id="recientes" class="sections m-5 p-3" href="">Recientes</a>
+          <a id="estrenos" class="sections m-5 p-3" href="">Estrenos</a>
           <a class="sections m-5 p-3" href="">Destacadas</a>
           <a class="all m-5 p-3" href=""
             >Todas <i class="fas fa-chevron-right p-2"></i
@@ -184,11 +218,17 @@
 
     <!--CAROUSEL CON CARDS PARA PELICULAS-->
 
-    <div class="container mt-5 mb-5">
+    <div class="container-fluid mt-5 mb-5">
       <div class="owl-carousel owl-theme">
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".bd-example-modal-sm" href=""><img
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#aladdin"
+              href=""
+              ><img
                 src="../imagenes/slider card peliculas/aladdin.png"
                 class="card-img-top"
             /></a>
@@ -197,7 +237,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".damayvagabundo" href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#damayvagabundo"
+              href=""
               ><img
                 src="../imagenes/slider card peliculas/damayelvagabundo.png"
                 class="card-img-top"
@@ -207,7 +252,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".avenger" href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#avenger"
+              href=""
               ><img
                 src="../imagenes/slider card peliculas/endgame.png"
                 class="card-img-top"
@@ -217,7 +267,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".hobbsandshaw" href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#hobbsandshaw"
+              href=""
               ><img
                 src="../imagenes/slider card peliculas/hobbsandshaw.png"
                 class="card-img-top"
@@ -227,7 +282,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".it-chapter-2" href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#it-chapter-2"
+              href=""
               ><img
                 src="../imagenes/slider card peliculas/it2.png"
                 class="card-img-top"
@@ -237,7 +297,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".toy-story-4" href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#toy-story-4"
+              href=""
               ><img
                 src="../imagenes/slider card peliculas/toystory4.png"
                 class="card-img-top"
@@ -247,9 +312,44 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a type="button" class="btn btn-success boton" data-toggle="modal" data-target=".me-before-you" href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#me-before-you"
+              href=""
               ><img
                 src="../imagenes/slider card peliculas/yoantesdeti.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#joker"
+              href=""
+              ><img
+                src="../imagenes/slider card peliculas/joker.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#proyecto-geminis"
+              href=""
+              ><img
+                src="../imagenes/slider card peliculas/proyectogeminis.png"
                 class="card-img-top"
             /></a>
           </div>
@@ -260,11 +360,11 @@
     <!--FIN CAROUSEL CON CARDS PELICULAS-->
 
     <!--SECCION SERIES-->
-    <div class="container-fluid d-flex">
+    <div class="container d-flex">
       <div class="row">
         <div class="col-12">
           <h2 class=" destacadas m-5 p-1">Series</h2>
-          <a class="sections m-5 p-3" href="">Recientes</a>
+          <a id="series-recientes" class="sections m-5 p-3" href="">Recientes</a>
           <a class="all m-5 p-3" href=""
             >Todas <i class="fas fa-chevron-right p-2"></i
           ></a>
@@ -274,11 +374,16 @@
     <!--FIN DE SECCION SERIES-->
 
     <!--CAROUSEL CON CARDS SERIES-->
-    <div id="" class="container mt-5 mb-5">
+    <div class="container-fluid mt-5 mb-5">
       <div class="owl-carousel owl-theme">
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#arrow"
+              href=""
               ><img
                 src="../imagenes/slider card series/arrow.png"
                 class="card-img-top"
@@ -288,7 +393,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#black-mirror"
+              href=""
               ><img
                 src="../imagenes/slider card series/blackmirror.png"
                 class="card-img-top"
@@ -298,7 +408,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#breaking-bad"
+              href=""
               ><img
                 src="../imagenes/slider card series/breakingbad.png"
                 class="card-img-top"
@@ -308,7 +423,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#dark"
+              href=""
               ><img
                 src="../imagenes/slider card series/dark.png"
                 class="card-img-top"
@@ -318,7 +438,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#walking-dead"
+              href=""
               ><img
                 src="../imagenes/slider card series/dead.png"
                 class="card-img-top"
@@ -328,7 +453,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#flash"
+              href=""
               ><img
                 src="../imagenes/slider card series/flash.png"
                 class="card-img-top"
@@ -338,7 +468,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#casa-de-papel"
+              href=""
               ><img
                 src="../imagenes/slider card series/lacasadepapel.png"
                 class="card-img-top"
@@ -348,7 +483,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#lucifer"
+              href=""
               ><img
                 src="../imagenes/slider card series/lucifer.png"
                 class="card-img-top"
@@ -358,7 +498,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#peaky-blinders"
+              href=""
               ><img
                 src="../imagenes/slider card series/peaky.png"
                 class="card-img-top"
@@ -368,7 +513,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#stranger-things"
+              href=""
               ><img
                 src="../imagenes/slider card series/things.png"
                 class="card-img-top"
@@ -378,7 +528,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#vikings"
+              href=""
               ><img
                 src="../imagenes/slider card series/vikingos.png"
                 class="card-img-top"
@@ -388,7 +543,12 @@
 
         <div class="ml-2 mr-2">
           <div class="card btn-outline-success">
-            <a href=""
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#reason-why"
+              href=""
               ><img
                 src="../imagenes/slider card series/why.png"
                 class="card-img-top"
@@ -400,99 +560,920 @@
 
     <!--FIN CAROUSEL CON CARDS SERIES-->
 
+    <!--SECCION PROXIMOS ESTRENOS-->
+    <div class="container d-flex">
+      <div class="row">
+        <div class="col-12">
+          <h2 class=" destacadas m-5 p-1">Proximos Estrenos</h2>
+        </div>
+      </div>
+    </div>
+    <!--FIN SECCION PROXIMOS ESTRENOS-->
+
+    <!--CAROUSEL PROXIMOS ESTRENOS-->
+    <div class="container-fluid mt-5 mb-5">
+      <div class="owl-carousel owl-theme">
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#"
+              href=""
+              ><img
+                src="../imagenes/slider proximos estrenos/starwars.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#"
+              href=""
+              ><img
+                src="../imagenes/slider proximos estrenos/sonic.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#"
+              href=""
+              ><img
+                src="../imagenes/slider proximos estrenos/scooby.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#"
+              href=""
+              ><img
+                src="../imagenes/slider proximos estrenos/jumanji3.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#"
+              href=""
+              ><img
+                src="../imagenes/slider proximos estrenos/frozen2.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+
+        <div class="ml-2 mr-2">
+          <div class="card btn-outline-success">
+            <a
+              type="button"
+              class="btn btn-success boton"
+              data-toggle="modal"
+              data-target="#"
+              href=""
+              ><img
+                src="../imagenes/slider proximos estrenos/dolittle.png"
+                class="card-img-top"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FIN CAROUSEL PROXIMOS ESTRENOS-->
+
     <!--MODAL PARA PELICULAS-->
-    <div class="modal fade bd-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade"
+      id="aladdin"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/cPjmcWVv6K4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/cPjmcWVv6K4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade damayvagabundo" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade"
+      id="damayvagabundo"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/WmG9Bxvx-m4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/WmG9Bxvx-m4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade avenger" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade"
+      id="avenger"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/znk2OICHbjY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/znk2OICHbjY"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade hobbsandshaw" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade "
+      id="hobbsandshaw"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=qVPUMrzakSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/xoGUI0jlbVo"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade it-chapter-2" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade"
+      id="it-chapter-2"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=xhJ5P7Up3jA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/SF832fGsNxo"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade toy-story-4" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade"
+      id="toy-story-4"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=BCPzK1QtFI8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/f33yJZ5uOpU"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="modal fade me-before-you" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-sm" role="document">
+    <div
+      class="modal fade"
+      id="me-before-you"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
-          <iframe width="560" height="315" src="https://www.youtube.com/watch?v=5XN_P1kpg5s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <div class="modal-footer bg-dark w-100 modal-sm">
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="button" class="btn btn-primary shadow-none">Ver Pelicula</button>
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              class="embed-responsive-item"
+              width="960"
+              height="915"
+              src="https://www.youtube.com/embed/Eh993__rOxA"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
           </div>
         </div>
       </div>
     </div>
 
+    <div
+      class="modal fade"
+      id="joker"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/i5iJQGcHsmg"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe
+            >>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="proyecto-geminis"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/qqf8q1gFnTU"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              Ver Pelicula
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!--FIN MODAL PARA PELICULAS-->
 
+    <!--MODAL PARA SERIES-->
+    <div
+      class="modal fade"
+      id="arrow"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/cJmcbRnETK4"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="black-mirror"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/gy4d65HUbwc"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="breaking-bad"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rJnjxvgvkBM"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="dark"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/IJ_AZCvCacw"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="walking-dead"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/3Snv4DgsSWU"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="flash"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/XN3Z4xtNFgE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="casa-de-papel"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/rLTD_AD91uE"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="lucifer"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/K2kyWOMsy2Q"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="peaky-blinders"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/oVzVdvGIC7U"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="stranger-things"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/PWGeOlpK_Eg"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="vikings"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/f5av6OqFwz0"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="reason-why"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="mySmallModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/VVX3ow-wKJg"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="modal-footer bg-dark w-100 modal-lg">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary shadow-none">
+              <a href="">Ver Serie</a>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--FIN MODAL PARA SERIES-->
+
+    <!--INICIO FOOTER-->
+    <footer class="container-fluid footer">
+      
+        <div class=" col-md-4 col-sm-12 info-ad">
+          <ul>
+            <li><a href="">Aviso Legal</a></li>
+            <li><a href="">Privacidad</a></li>
+            <li><a href="">Prensa</a></li>
+            <li><a href="">Contactanos</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4 col-sm-12 derechos-reservados">
+          <h3><a href="">VerPelis.Com ©</a></h3>
+        </div>
+        <div class="col-md-4 col-sm-12 social">
+          <p>Seguinos en:</p>
+          <a href="https://twitter.com/" target="_blank"><i class="fab fa-twitter fa-lg"></i></a>
+          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f fa-lg"></i></a>
+          <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram fa-lg"></i></a>
+        </div>
+     
+    </footer>
+
+    <!--FIN FOOTER-->
+
     <!--SCRIPTS BOOTSTRAP-->
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js" integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.0/js/bootstrap.min.js"
+      integrity="sha384-3qaqj0lc6sV/qpzrc1N5DC6i1VRn/HyX4qdPaiEFbn54VjQBEU341pvjz7Dv3n6P"
+      crossorigin="anonymous"
+    ></script>
 
     <!--FIN SCRIPTS BOOTSTRAP-->
 
@@ -503,22 +1484,25 @@
       $(document).ready(function() {
         $(".owl-carousel").owlCarousel();
       });
-    </script>
 
-    <!--PARA REPRODUCIR VIDEO DEL MODAL-->
-   
+      $(".owl-carousel").owlCarousel({
+        rtl: true,
+        loop: true,
+        margin: 10,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 3
+          },
+          1000: {
+            items: 5
+          }
+        }
+      });
+    </script>
 
   </body>
 </html>
-=======
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
->>>>>>> master
