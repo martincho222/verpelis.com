@@ -1,3 +1,6 @@
+html{
+    min-height: 100vh;
+}
 body{
     border-top: 4px solid  #4ec81a;
     margin: 0;
