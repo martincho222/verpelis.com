@@ -6,43 +6,75 @@ body{
     background-repeat: no-repeat;
 }
 
-.navbar{
-    background:#000000 !important;
+.navbar {
+    background: rgb(0, 0, 2);
+    background: linear-gradient(
+      113deg,
+      rgba(0, 0, 2, 1) 48%,
+      rgba(62, 119, 102, 1) 100%
+    );
     border-bottom: 1px solid #4ec81a;
-}
-.nav-item{
-    margin-left: 15px;
-    padding-left: 15px;
-}
-.nav-link:hover{
-    border-bottom: 1px solid #4ec81a;
-}
-
-
-.collapse .navbar-nav .nav-item .nav-link{
+    opacity: 0.5;
+    transition: opacity 0.3s ease-in-out;
+  }
+  .navbar:hover {
+    opacity: 1;
+  }
+  .nav-item {
+    margin-left: 20px;
+    padding-left: 20px;
+  }
+  
+  .collapse .navbar-nav .nav-item .nav-link {
     color: #4ec81a;
-}
-.dropdown-menu .dropdown-item{
+  }
+  .dropdown-menu .dropdown-item {
     color: #4ec81a;
-}
-
-.dropdown-menu .dropdown-item:hover{
+  }
+  
+  .dropdown-menu .dropdown-item:hover {
     background: #000;
-}
-
-.search{
+  }
+  
+  .search {
     border: 1px solid #4ec81a;
     color: #4ec81a;
-}
-.search:hover{
+  }
+  .search:hover {
     background: #4ec81a !important;
     color: black;
-}
-
-
-.navbar-toggler-icon{
+  }
+  
+  .navbar-toggler-icon {
     color: #4ec81a !important ;
-}
+  }
+  
+  .form-control {
+    border: 1px solid #4ec81a;
+  }
+  
+  .recientes {
+    color: #4ec81a;
+  }
+  
+  .container {
+    border-bottom: 3px solid #4ec81a fixed;
+  }
+  .container-fluid {
+    border-bottom: 3px solid #4ec81a;
+  }
+  
+  .btn {
+    background: black !important;
+    color: #4ec81a;
+    border: 1px solid #4ec81a;
+  }
+  
+  .btn:hover {
+    background: #4ec81a !important;
+    color: #000;
+    border: 1px solid black !important;
+  }
 
 .container{
     margin: auto;
@@ -58,24 +90,26 @@ body{
 
 h2{
     color: #212121;
-    text-align: center;
     margin: 0px;
     font-size: 30px;
     margin-bottom: 20px;
+    text-align: center;
 }
 
-hr{
-    width: 85%;
+.divider{
+    display: flex;
+    justify-content: flex-start;
+    align-content: flex-start;
+    width: 50%;
 }
 
 input, textarea{
     font-size: 16px;
     width: 90%;
     border: none;
-    border-bottom: 1px solid #333;
-    outline: none;
     padding: 15px;
 }
+
 
 #btnenviar{
     width: 90%;
@@ -106,9 +140,8 @@ h3{
     text-align: center;
 }
 
-.left-area{
-    justify-content: center;
-    align-content: center;    
+.left-Area{
+    padding-left: 50px;
 }
 
 .text-Right ul{
